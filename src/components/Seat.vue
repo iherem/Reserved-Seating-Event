@@ -2,7 +2,7 @@
     <div class="col-xs-8 col-xs-offset-2">
         <h5>Choose Seat</h5>
         <div class="well">Front</div>
-        <template v-for="(index, s) in seats">
+        <template v-for="(index, s) in this.eventob.seat">
                 <button :class="className(index)" :disabled="index.isconfirm" @click="chooseSeat(index)">{{index.id}}</button>
                 <template v-if="modNumber(s+1)">
                     <br/><br/>
@@ -39,15 +39,6 @@
             },
             chooseSeat(seat){
                 this.$emit('chooseSeat', seat)
-            }
-        },
-        computed: {
-            seats() {
-                this.$http.get('http://52.77.221.0:3000/api/event/'+this.eventob._id)
-                .then(function(response){
-                    this.seatsz = response.data.seat
-                })
-                return this.seatsz
             }
         }
     }

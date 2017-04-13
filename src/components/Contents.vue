@@ -31,8 +31,7 @@
         },
         methods: {
             handleChooseEvent(eventob) {
-                console.log('ok')
-                this.selectedSeat = []
+                this.selectSeats = []
                 this.eventob = eventob
                 this.$emit('chooseEvent', eventob)
             },
