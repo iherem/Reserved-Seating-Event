@@ -66,7 +66,7 @@
                             console.log(eventobid)
                             Vue.http.get('http://52.77.221.0:3000/api/event/'+eventobid+"/"+seatId[s]+"/"+name)
                                 .then(function(response) {
-                                    console.log(response.data)
+                                    
                                 })
                         }
 
