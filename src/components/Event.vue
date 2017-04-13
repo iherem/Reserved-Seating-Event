@@ -1,6 +1,6 @@
 <template>
     <ul class="list-group" @click="chooseEvent(eventob)">
-        <li class="list-group-item">{{eventname}}
+        <li :class="active()">{{eventname}}
         </li>
     </ul>
 </template>
@@ -12,12 +12,17 @@
         ],
         data() {
             return {
-    
+                
             }
         },
         methods: {
             chooseEvent(eventob) {
                 this.$emit('chooseEvent', eventob)
+            },
+            active(){
+                return [
+                    'list-group-item'
+                ]
             }
         }
     }
@@ -28,7 +33,9 @@
         text-align: left;
         cursor: pointer;
     }
-    
+    .actives{
+        background-color: antiquewhite;
+    }
     li.list-group-item {
         border: none;
         border-left: solid 5px #000;

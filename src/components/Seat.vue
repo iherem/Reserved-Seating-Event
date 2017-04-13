@@ -1,6 +1,6 @@
 <template>
     <div class="col-xs-8 col-xs-offset-2">
-        <h5>Choose Seat</h5>
+        <h5>{{eventob.id}}</h5>
         <div class="well">Front</div>
         <template v-for="(index, s) in this.eventob.seat">
                 <button :class="className(index)" :disabled="index.isconfirm" @click="chooseSeat(index)">{{index.id}}</button>
