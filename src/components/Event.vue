@@ -1,18 +1,18 @@
 <template>
-        <ul class="list-group" @click="chooseEvent(eventob)">
-            <li class="list-group-item">{{eventname}}
-            </li>
-        </ul>
+    <ul class="list-group" @click="chooseEvent(eventob)">
+        <li class="list-group-item">{{eventname}}
+        </li>
+    </ul>
 </template>
 
 <script>
     export default {
         props: [
-            'eventname','eventob'
+            'eventname', 'eventob'
         ],
         data() {
             return {
-                
+    
             }
         },
         methods: {
@@ -32,6 +32,11 @@
     li.list-group-item {
         border: none;
         border-left: solid 5px #000;
+    }
+    
+    li.list-group-item:hover {
+        background-color: antiquewhite;
+        transition: .5s;
     }
     
     li.list-group-item:first-child {
