@@ -46,7 +46,7 @@
                 this.$emit('listSeat', this.selectSeats)
             },
             created() {
-                this.$http.get('http://localhost:3000/api/events')
+                this.$http.get('http://52.77.221.0:3000/api/events')
                     .then(function(response) {
                         this.events = response.data
                     })

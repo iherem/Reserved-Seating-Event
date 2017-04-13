@@ -64,12 +64,12 @@
                         const seatId = selectedSeat.map(s => s.id)
                         for (const s in seatId) {
                             console.log(eventobid)
-                            Vue.http.get('http://localhost:3000/api/event/'+eventobid+"/"+seatId[s]+"/"+name)
+                            Vue.http.get('http://52.77.221.0:3000/api/event/'+eventobid+"/"+seatId[s]+"/"+name)
                                 .then(function(response) {
                                     console.log(response.data)
                                 })
                         }
-                        
+
                     })
     
                 })

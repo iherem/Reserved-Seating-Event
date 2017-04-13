@@ -43,7 +43,7 @@
         },
         computed: {
             seats() {
-                this.$http.get('http://localhost:3000/api/event/'+this.eventob._id)
+                this.$http.get('http://52.77.221.0:3000/api/event/'+this.eventob._id)
                 .then(function(response){
                     this.seatsz = response.data.seat
                 })
