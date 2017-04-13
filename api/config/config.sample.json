@@ -1,0 +1,12 @@
+{
+    "db":
+        {
+            "hostname":"sample.com",
+            "port":27017,
+            "dbname":"sample",
+            "option":"?authSource=admin",
+            "collection":"sampleCollection",
+            "user":"test",
+            "pass":"sample"
+        }
+}

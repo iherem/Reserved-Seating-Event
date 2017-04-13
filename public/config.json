@@ -1,0 +1,12 @@
+{
+    "db":
+        {
+            "hostname":"52.77.221.0",
+            "port":27017,
+            "dbname":"vue",
+            "option":"?authSource=admin",
+            "collection":"events",
+            "user":"iherem",
+            "pass":"mmeiei"
+        }
+}
